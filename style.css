@@ -1,0 +1,87 @@
+
+.container {
+  width: 350px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.wallet-section, .nft-section {
+  margin-bottom: 20px;
+}
+
+.primary-button {
+  background-color: #9945FF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #8935FF;
+}
+
+.primary-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #9945FF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

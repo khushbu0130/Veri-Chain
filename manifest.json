@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Solana NFT Ownership Verification",
+  "version": "1.0",
+  "description": "Check if you own an NFT on the Solana blockchain",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+  },
+  "host_permissions": [
+    "https://api.mainnet-beta.solana.com/*"
+  ]
+}

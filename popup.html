@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana NFT Ownership Verification</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="lib/solana-web3.min.js"></script>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>NFT Ownership Checker</h1>
+    
+    <div class="wallet-section">
+      <button id="connectWallet" class="primary-button">shreyash Phantom Wallet</button>
+      <p id="walletStatus" class="status"></p>
+    </div>
+
+    <div class="nft-section">
+      <input type="text" id="mintAddress" placeholder="Enter NFT mint address" class="input-field">
+      <button id="checkOwnership" class="primary-button" disabled>Verify Ownership</button>
+      <div id="loadingSpinner" class="spinner hidden"></div>
+      <p id="ownershipStatus" class="status"></p>
+    </div>
+  </div>
+</body>
+</html>
